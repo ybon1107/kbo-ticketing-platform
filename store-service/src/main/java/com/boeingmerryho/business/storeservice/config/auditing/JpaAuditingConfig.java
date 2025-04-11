@@ -1,4 +1,4 @@
-package com.boeingmerryho.business.storeservice.infrastructure.config;
+package com.boeingmerryho.business.storeservice.config.auditing;
 
 import java.util.Optional;
 
