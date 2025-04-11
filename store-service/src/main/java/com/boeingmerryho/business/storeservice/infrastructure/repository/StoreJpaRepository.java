@@ -1,14 +1,9 @@
 package com.boeingmerryho.business.storeservice.infrastructure.repository;
 
-import java.util.Optional;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.boeingmerryho.business.storeservice.domain.entity.Store;
-import com.boeingmerryho.business.storeservice.domain.repository.StoreRepository;
 
-public interface StoreJpaRepository extends JpaRepository<Store, Long>, StoreRepository {
+public interface StoreJpaRepository extends JpaRepository<Store, Long> {
 	boolean existsByStadiumIdAndNameAndIsDeletedFalse(Long stadiumId, String name);
-
-	Optional<Store> findByIdAndIsDeletedFalse(Long id);
 }
